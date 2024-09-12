@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_columnWeight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/search_border"
+    android:padding="10dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp">
+
+    <!-- Mahasiswa image (optional) -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:id="@+id/imageUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/lavender"
+        android:src="@drawable/baseline_person_24"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Mahasiswa nama -->
+    <TextView
+        android:id="@+id/namaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Nama Mahasiswa"
+        android:gravity="center"/>
+
+    <!-- Mahasiswa nim -->
+    <TextView
+        android:id="@+id/nimTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="NIM Mahasiswa"
+        android:gravity="center"/>
+
+    <!-- Mahasiswa role -->
+    <TextView
+        android:id="@+id/roleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Role Mahasiswa"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/adminButtonsLayout"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/editBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/sunFlower"
+            android:src="@drawable/baseline_edit_24"
+            android:layout_marginRight="10dp"/>
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/alizarin"
+            android:src="@drawable/baseline_delete_24"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileRootFragment">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="30dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cornerradius_glass"
+            android:layout_marginTop="60dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileimage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@color/teal_700"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeWidth="4dp"
+                android:padding="5dp"
+                app:strokeColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/profilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profileimage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="26dp"
+                android:text="Nama"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                />
+            <TextView
+                android:id="@+id/profilenim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profilename"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Nim"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                />
+
+            <Button
+                android:id="@+id/profiledetailbutton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/profilenim"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/blue"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:text="Profile"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/profileaboutusbutton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/profiledetailbutton"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/blue"
+                android:drawableLeft="@drawable/baseline_info_24"
+                android:text="About Us"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:textColorHint="@color/white"
+                />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/logoutbutton"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/profileaboutusbutton"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/blue"
+                android:drawableLeft="@drawable/baseline_logout_24"
+                android:text="Log Out"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:textColorHint="@color/white"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

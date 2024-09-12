@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HimaPL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome"><u>WELCOME TO HIMAPL!!!</u></string>
+    <string name="aboutus">
+        Selamat datang di Aplikasi HIMAPL (Himpunan Mahasiswa Teknik Perangkat Lunak). HIMAPL adalah komunitas mahasiswa yang berdedikasi untuk memajukan bidang Teknik Perangkat Lunak melalui kolaborasi dan interaksi antar anggota. Aplikasi ini dirancang khusus untuk memfasilitasi kegiatan , komunikasi di antara anggota HIMAPL serta untuk menginformasikan berbagai kegiatan-kegiatan dan daftar anggota-anggota himpunan ini.
+
+        \n\nDengan visi kami yaitu menjadi platform yang menghubungkan seluruh mahasiswa Teknik Perangkat Lunak untuk menciptakan lingkungan yang mendukung pertumbuhan akademik, profesional, dan sosial. Kami percaya bahwa dengan aplikasi ini, HIMAPL dapat menjadi lebih terorganisir dan efisien dalam menjalankan berbagai kegiatan serta memperkuat ikatan antar anggotanya. Terima kasih telah menjadi bagian dari HIMAPL.
+    </string>
+</resources>
